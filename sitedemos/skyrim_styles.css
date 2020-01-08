@@ -1,0 +1,221 @@
+
+body{background-color:#000;font-family:Verdana;
+	background-image:url("assets/bg_pano2.jpg");background-repeat:repeat-y;background-size:100%;
+	margin:auto;}
+
+
+@font-face {
+    font-family: IMFELL;
+    src: url("assets/IMFELL.otf");
+}
+
+
+header{width:100%;height:150px;background-color:#000;color:#fff;
+		margin-bottom:30px;box-shadow:0px 0px 20px 1px #333333;
+		-webkit-user-select: none; -moz-user-select: none;}
+header img{width:100%; box-shadow:none;}		
+
+#headerelements{width:20%;height:150px;display:inline-block;margin:1%;float:left;}
+#headerelements img{max-height:150px;width:auto;max-height:80%;}
+
+nav{width:75%;background:none;color:#000; text-align:left;
+	display:inline-block;margin:1%;float:left;padding-top:36px;}
+nav ul{list-style-type:none;}
+nav ul li{display:inline-block;margin:1.5%;}
+nav a{text-decoration:none; font-size:1.4em;color:#fff;
+		padding-left:35px;border:hidden 1px #000; border-radius:2px;}
+nav a:hover{background-image:url("assets/slctArrow.png");
+			background-repeat:no-repeat;background-size:auto 100%;}
+nav a:visited{}
+
+.desknav{display:auto;}
+.mobilenav{display:none;}
+
+.currentpage  a{background-image:url("assets/arrowX.png");
+			background-repeat:no-repeat;background-size:auto 100%;}
+.currentpage a:hover{background-image:url("assets/arrowX.png");
+			background-repeat:no-repeat;background-size:auto 100%;}
+
+
+#container{margin:auto;width:65%;
+			background-color:rgba(0,0,0,0.65); color:#fff;
+			/*z-index:-1;*/padding:75px 20px 10px 20px;
+			box-shadow:0px 0px 5px 1px #000;
+			}
+h1{font-size:2.2em; font-weight:bold; margin:auto; text-align:left;font-family:IMFELL;}
+h2{font-size:1.9em; font-weight:bold; margin:auto; text-align:left;font-family:IMFELL;}
+h3{font-size:1.8em; font-weight:bold; margin:auto; text-align:left;font-family:IMFELL;}
+img{width:100%; box-shadow:0px 0px 10px 1px #fff;}
+article{font-size:1.2em;}
+p{margin-bottom:0;}
+
+.desks{display:auto;}
+.mobiles{display:none;width:auto;margin:auto;}
+.mobiles img{width:70%; margin:auto;}
+
+.mobiles2{display:none;width:80%;margin:1% auto;}
+
+.sc_blue{text-shadow: -1px -1px 0 #ABDCFF, 1px -1px 0 #ABDCFF, -1px 1px 0 #ABDCFF, 1px 1px 0 #ABDCFF;}
+.te_red{text-shadow: -1px -1px 0 #FF9090, 1px -1px 0 #FF9090, -1px 1px 0 #FF9090, 1px 1px 0 #FF9090;}
+
+
+footer{width:100%;height:auto;background-color:#000;
+		color:#fff; text-align:center; font-size:0.6em; line-height:1.3em;
+		margin-top:50px; padding:20px 0px 30px 0px;
+		box-shadow:0px 0px 20px 5px #000;
+		-webkit-user-select: none; -moz-user-select: none;}
+footer a{text-decoration:none; color:#ccc;}
+footer a:hover{color:#fff;text-decoration:underline;}
+footer ul{list-style-type:none;}
+
+/*video*/
+iframe{width:100%;height:100%;margin:auto;}
+.videoborder{box-shadow: 0px 0px 30px 5px #fff; border:1px hidden #fff; border-radius:5px;}
+.embed-responsive{position:relative;display:block;height:0;padding:0;overflow:hidden}
+.embed-responsive .embed-responsive embed,.embed-responsive iframe{position:absolute;top:0;bottom:0;left:0;width:100%;height:100%;border:0}.embed-responsive-16by9{padding-bottom:56.25%}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 2% 0px 2% 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0.3% 1% 0.3%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWELVE  */ 
+
+/*so I got this from the grid calculator website and it creates margins but doesn't account for them in the span widths which is really inconvenient...*/
+.span_12_of_12 {
+	width: 100%;
+}
+
+.span_11_of_12 {
+  	width: 91.66%;
+}
+.span_10_of_12 {
+  	width: 83.33%;
+}
+
+.span_9_of_12 {
+  	width: 75%;
+}
+
+.span_8_of_12 {
+  	width: 66.66%;
+}
+
+.span_7_of_12 {
+  	width: 58.33%;
+}
+
+.span_6_of_12 {
+  	width: 49.5%;
+}
+
+.span_5_of_12 {
+  	width: 41.66%;
+}
+
+.span_4_of_12 {
+  	width: 33.33%;
+}
+
+.span_3_of_12 {
+  	width: 25%;
+}
+
+.span_2_of_12 {
+  	width: 16.66%;
+}
+
+.span_1_of_12 {
+  	width: 8.333%;
+}
+
+
+
+
+@media only screen and (max-width: 1600px) {
+	#container{width:70%;display:block;}
+	nav{width:50%;background:none;color:#000; text-align:left;
+	display:inline-block;margin:1%;float:right;padding:0;}
+	nav ul{list-style-type:none;margin:auto;padding:0;}
+	nav ul li{display:block;margin:1%;margin:auto;padding:0;height:auto;}
+	nav a{text-decoration:none; font-size:1em;color:#fff;
+			border:hidden 1px #000; border-radius:2px;height:auto;}
+	.desks{display:none;}
+	.mobiles{display:block;}
+	.mobiles2{display:block;}
+	
+	.col {  margin: 1% 1% 1% 1%; }
+    
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	width: 100%; 
+	}
+}
+@media only screen and (max-width: 1200px) {
+	#container{width:75%;display:block;}
+	#headerelements{width:100%;background-position:center center;}
+	#headerelements img{height:100%;background-position:center;}
+	.desknav{display:none;}
+	.mobilenav{display:block;}
+	nav{width:100%;background-color:rgba(0,0,0,1);color:#fff; text-align:left;
+	display:inline-block;margin:0%;height:auto;display:block;padding:10px 0px;}
+	nav ul{list-style-type:none;width:90%;}
+	nav ul li{display:block;margin:0;padding:5px 30%;
+				box-shadow:0px 0px 2px 2px #666666 inset;}
+	nav ul li:hover{box-shadow:0px 0px 2px 3px #fff inset;
+					background-position:1% 0%;background-image:url("assets/slctArrow.png");
+					background-repeat:no-repeat;background-size:auto 100%;}
+	nav a{text-decoration:none; font-size:1em;color:#fff;border:hidden 1px #000; border-radius:2px;}
+	nav a:hover{background:none;}
+	nav a{margin:0%;padding:0.000%;}
+	
+	.currentpage {background:none;}
+	.currentpage a{background:none;}
+	.currentpage a:hover{background:none;}
+	.currentpage:hover{background-image:url("assets/arrowX.png");
+			background-repeat:no-repeat;background-size:auto 100%;}
+	.currentpage {background-image:url("assets/arrowX.png");
+			background-repeat:no-repeat;background-size:auto 100%;}
+	
+	
+	
+	.col {  margin: 1% 1% 1% 1%; }
+    
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	width: 100%; 
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#container{width:80%;}
+	
+	.col {  margin: 1% 1% 1% 1%; }
+    
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	width: 100%; 
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#container{width:85%;}
+	
+	.col {  margin: 1% 1% 1% 1%; }
+    
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	width: 100%; 
+	}
+}

@@ -1,0 +1,240 @@
+
+
+/*CSS: Tomoki, mostly. I worked on all the media queries and created the look of the site*/
+
+
+#container{font-family:Arial; width:70%; margin:auto;}
+
+/*desktop nav large monitor)*/)
+#desknav{display:block;}
+
+/*on info page, shows up when only on info pages and its 2 subpages*/
+#infonav{display:block;
+			margin:auto;
+			margin-left:-40%;}
+#infonav ul{margin:auto;
+			margin-left:-2%;
+			margin-top:-40px;}
+#infonav li{margin:1px;}
+#infonav a{padding:7px 10px;}
+
+/*smaller monitor nav*/
+#smalldesknav{display:none;
+			margin:auto;
+			height:100px;}
+#smalldesknav ul{display:block;}
+.tabletnavspace{margin-top:40px;}
+
+/*infonav smaller*/
+#smalldeskinfonav{display:block;
+			margin:auto;
+			margin-top:30px;
+			margin-left:-10px;}
+#smalldeskinfonav ul{margin:auto;}
+#smalldeskinfonav li{margin:1px;}
+#smalldeskinfonav a{padding:7px 10px;}
+.smalldesknavspace{margin-top:35px;}
+.smalldeskinfonavspace{margin-top:30px;}
+
+/*Tablet size or smaller*/
+#mobilenav{display:none;
+			margin-bottom:60px;}
+#mobileinfonav{display:block;}
+#mobileinfonav li{display:inline-block; width:30%;}
+
+
+
+body{background-color:#151515;
+	background-image:url('img/all/bg1.jpg');}
+
+header{height:150px; 
+		margin:auto;
+		margin-bottom:20px;
+		background-image:url('img/all/banner.png');
+		background-repeat:no-repeat;
+		background-position:top left;
+		text-align:center;
+		color:white;
+		background-color:#303030;
+		border: 1px solid #ccc;
+		border-radius:10px 10px 1px 1px;}
+h1{font-size:3.5em;}
+
+h1,h2,h3{font-family:'Exo 2', sans-serif;}
+
+.homecols{width:93%; margin:auto; height:350px; margin-bottom:20px;}
+.lcolumnhome{width:60%;
+			 float:left;
+			 height:auto;
+			 margin-left:1%;}
+.rcolumnhome{width:30%;
+			 float:right;
+			 height:auto;
+			 margin-left:1%;}
+.clearfix{clear:both;}
+			 
+.threecolumn{width:30%;
+			 float:left;
+			 height:auto;
+			 margin-left:1%;}
+			 
+.imgformathome{max-height:300px;
+				height:auto;
+				width:auto;}			 
+			 
+
+nav{height:90px;
+	margin:auto;
+	margin-top:20px;
+	margin-left:-3%;
+	}
+nav ul{list-style-type:none;
+		text-align:center;}
+nav li{display:inline-block;
+		margin:0px 5px;
+		}
+
+nav a{text-decoration:none;
+		text-align:center;
+		font-weight:bold;
+		border:3px outset #000000;
+		border-radius:10px;
+		padding:10px 50px;
+		margin-bottom:1em;
+		background-color:#eeeeee;
+		color:#000000;} 
+nav a:visited{color:#777777;
+				background-color:#dddddd;}
+nav a:hover{color:#DFBF47;
+			border:3px inset #ffffff;
+			background-color:#000000;}
+
+main{background-color:#101010; width:auto; color:#fff;}
+
+img{width:auto;}
+
+.example-inline-block{color:#fff;
+			background-color:#aa42ee;
+			width:220px;
+			display:inline-block;
+			margin:20px 50px;
+			padding:15px;
+			text-align:center;}
+
+ul li{text-decoration:none;
+	list-style-type:none;}
+a{color:#fff;
+	text-decoration:none;}
+a:hover{color:#DFBF47;}
+a:visited{color:#ccc;}
+
+footer{background-color:#303030;
+		display:block;
+		height:215px;
+		margin-top:30px;
+		border-radius:1px 1px 10px 10px;
+		clear:both;}
+footer ul{margin:auto;
+			text-align:center;
+			margin-left:-70px;
+			margin-top:30px;}
+
+
+/* never use article and aside in footer, use for main body content*/
+footer article{float:left;
+		width:49%;
+		border:1px #505050 solid;
+		border-radius:5px;
+		height:200px;
+		margin:5px 0.4%;
+		}
+		
+footer aside{float:left;
+		width:49%;
+		border:1px #505050 solid;
+		border-radius:5px;
+		height:200px;
+		margin:5px 0.4%;
+		color:#fff;
+		}
+		
+.copyrightonthesite{margin:auto;
+					margin-top:80px;
+					text-align:center;}
+.motto{display:block;
+		color:#505050;
+		background-color:#dddddd;
+		font-style:italic;
+		width:100px;
+		margin:auto;
+		margin-top:10px;
+		}
+
+
+
+		
+.secret{font-size:3px; text-align:right;
+		color:#000;}
+.secret a{color:#000;}
+.secret a:hover{color:#fff;}
+.secret a:visited{color:#000;}
+
+
+@media only screen and (max-width:1550px){
+	#container{width:80%;}
+	#desknav{display:none}
+	#smalldesknav{display:block}
+	#infonav{display:none;}
+	footer article{width:47%;}
+	footer aside{width:47%; float:right;}
+}
+		
+@media only screen and (max-width:900px){
+	#container{width:90%;}
+	#desknav{display:none;}
+	#tabletnav{display:block;}
+	#infonav{display:none;}
+	footer {height:450px;}
+	footer article{width:95%; float:none; margin:auto;}
+	footer aside{width:95%; float:none; margin:auto;}
+}
+		
+		
+@media only screen and (max-width:900px){
+	#container{width:90%;}
+	#desknav{display:none;}
+	#tabletnav{display:block;}
+	#infonav{display:none;}
+	footer {height:450px;}
+	footer article{width:95%; float:none; margin:auto;}
+	footer aside{width:95%; float:none; margin:auto;}
+}
+		
+		
+@media only screen and (max-width:700px){
+	#container{width:90%;}
+	#desknav{display:none;}
+	#smalldesknav{display:none;}
+	#mobilenav{display:block;}
+	#infonav{display:none;}
+
+
+	header,nav,main,aside,article{float:left; width:100%}
+	h1{font-size:2.5em; margin-top:50px;}
+	nav ul li{display:block;margin:0 20px 10px -10px;}
+	nav{height:auto;
+		margin:auto;}
+	nav a{display:block;
+			padding:10px 0;
+			text-align:center;}
+}
+@media only screen and (max-width:480px){
+	header,nav,main,aside,article{float:left; width:100%; }
+	h1{font-size:2em;}
+	nav ul li{display:block;margin:0 20px 10px -10px;}
+	nav{height:auto;
+		margin:auto;}
+	nav a{display:block;
+			padding:10px 0;
+			text-align:center;}
+}
